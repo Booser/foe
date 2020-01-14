@@ -12,9 +12,7 @@ ROYALS
  + Jobs
 - Lei
  + Talk
- + First job
 - Jeanne
-- Park?
 
 WATCH
 - City Watch
@@ -30,7 +28,6 @@ WATCH
  + Dungeon stuff
 
 
-- Magic shop magic box
 - Diva stats/abilities
 
 Rigard:
@@ -50,8 +47,8 @@ TSL
 
 
 OTHER
-- Shops
-- Residental?
+- Shops (Pen&Pam)
+- Residential?
 
 
 Set up more COMs!
@@ -79,8 +76,6 @@ TODO:
 * Look through Lactation code, there is something wrong with it (TEST)
 * Preg stuff:
  - Slots
- - StomachDesc
- - Counter
 
 * Burrows writing
  - Lagon. Vena. Ophelia.
@@ -119,7 +114,6 @@ REWRITE OF GUI:
 
 TODO stuff
 ----------
-* Pregnancy
 
 * Rewrite farm stuff
  - Gwendy
@@ -173,7 +167,7 @@ Feedback:
  - Farm
  
  - Forest
-  * Enterance
+  * Entrance
   * Outlaws Camp
   * Deep forest (locked)
   * Goblins
@@ -285,10 +279,10 @@ Feedback:
   + Cveta (Noble)
   
   
-* Highlands
+* Highlands (arc 2)
  - Malice
  - Horkan
- - Lions
+ - Lions?
 
 
 * Oasis
@@ -297,9 +291,9 @@ Feedback:
 
 
 * Free cities
- - Merchant city
- - Port town
- - Magic academy
+ - Merchant city - Afaris
+ - Port town - Dewynsport
+ - Magic academy - Talras
 
 
 
@@ -374,7 +368,7 @@ PART I:
 -------
 * Miranda (pre-follower)
 * Terry
-* Momo (?)
+* Momo (rewrite)
 * Outlaws
  - Maria (jobs)
  - Cveta (pre-follower, tobs)

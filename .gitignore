@@ -8,3 +8,12 @@ build/*
 *.zip
 *.fenoxo
 **/Thumbs.db
+.project
+desktop.ini
+node_modules
+.vscode/*
+yarn.lock
+dist/*
+package-lock.json
+coverage
+.nyc_output

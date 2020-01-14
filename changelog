@@ -5,13 +5,291 @@ CHANGELOG for Fall of Eden
                   CURRENT
 --------------------------------------------
 
-Version 0.4k
-------------
-* Asche's magic box now counts toward purchases for tasks
+Version 0.5.5
+-------------
+* Bugfix: Introduction Review bug that would eventually cause issues with the parser.
+* Bugfix: Fixed an error in the Catboy Mage AI.
+* Various typos fixed.
+* Added new $20 patreons from 0.5.x to credits.
+
+Adding 10k words of new content:
+* A new loss scene for Gwendy with a lot of variation (though a part of it is locked behind a flag that is not ingame yet).
+* A complex interconnect of scenes that allows for you to:
+ - Avoid getting fucked by Gwendy (applies to both the strap-on and double dildo scene), even if you lost to her.
+ - Later give in and submit to her.
+ - Turn things around and dominate her if you have a high SubDom score.
+ - Bypass the challenge structure entirely, either submitting or dominating. This requires that you've won or lost at least three times (that you've gotten the Oral tier challenge scene). The submit version has some shenanigans in it.
 
 --------------------------------------------
              PREVIOUS VERSIONS
 --------------------------------------------
+
+Version 0.5.4
+-------------
+* Bugfix: there was a bug where alchemy would fail if you didn't already have any of the item being crafted in your inventory.
+* Bugfix: Fixed Gol Tailfuck/Hyperfuck scene prompt.
+* Bugfix: Gwendy's Win scenes were capped to Titjob/Tease level. This has been fixed, and the rest of the scenes can be accessed once again.
+* Bugfix: Cleanup of debug output.
+
+Adding 5k words of new content:
+* A new loss scene for Gwendy with quite a lot of variation. It has a major variation if the pc has low dominance (or is female) involving one of Gwendy's toys.
+
+Version 0.5.3
+-------------
+* Bugfix, Halloween event no longer steals all your items.
+
+* Fixed numerous minor logic errors in scenes discovered by applying strict typing.
+* Fixed some race detection errors in scenes, also discovered by applying strict typing.
+* Added some debug functionality. If you are in to hacking through the console, a bunch of game variables can now be accessed through the console on the object 'game'.
+* Added a new parser methodology that should make implementing scenes quicker and less prone to errors. It uses template literals from ES6 and some helper objects to allow for a simple parser syntax.
+
+Adding roughly 8k words of new content:
+* Gwendy has new talk scenes for various topics (chat, childhood, parents). The farm description placeholders have been removed.
+* Gwendy has a new loss scene for her challenge (eat her out).
+* Replaced some awkward placeholders for Jeanne, Roa, Twin's Penthouse (content for the twins themselves to come).
+
+Version 0.5.2
+-------------
+* Fixed bug in Abilities (would show if you tried to Heal out of combat, and then pressed "Back").
+* Fixed bug in default pregnancy trigger handler.
+* Fixed Cassidy's shop being broken.
+* Added the ability to set cock size on character creation.
+* The pregnancy hastening effects of Gestarium are now applied when using Gestarium+ too.
+* Fixed a bug in Lagon's bad end.
+* Fixed a bug in fucking Terry with strapon (borrowed).
+
+Version 0.5.1
+-------------
+* Correctly bundled fonts.
+* Fixed a bug in one of Cale's scenes.
+* Fixed Fera being bugged.
+* Fixed Miranda first date bug.
+
+Version 0.5.0
+-------------
+* Fixed numerous typos.
+* Fixed a few Cavalcade parser errors.
+* Changed common measurement unit to imperial (inches, feet, yards) for consistency.
+ - Adjusted a bunch of NPC cock sizes to account for this. Holler if you find discrepancies or size evaluations that doesn't make sense!
+* Becoming a herm in the intro now starts you with a seven inch cock (bigger than before).
+* Added a slew of new cock size adjectives (and reduced their prevalence in scenes). The descriptors should be slightly less repetitive now.
+* Added a review/redo option to character creation in the intro.
+* Renamed FemmeBoy body type to Trap.
+* Added a Voluptuous option for female start.
+* Using cheats to get items in the tent now gives 10 of every item instead of 1.
+* Fixed a bug in Alchemy that would cause brewing to consume 2x the amount of ingredients actually required.
+* At the end of combat, loot is now combined if you receive multiple instances of the same type of item.
+* Combat output has been streamlined. There should be less button mashing to get to the next combat choice now. This doesn't change any of the mechanics, just how combat is displayed.
+ - When picking a spell, the battle screen now shows what spell you picked when you choose a target.
+* Spells with a cast time that target specific enemies will now retarget if the original target is knocked out before the spell hits. Yes, bleeding edge 90's era RPG technology here.
+* Added a "Raise" spell to Healer/Acolyte jobs. With it, you can get fallen allies back on their feet again.
+
+* Streamlined Chief talk scenes (removed Next, now looks more in line with other NPC dialogue).
+* Adjusted pacing in the Equines win scenes. They are now split up into multiple pages rather than one long scene.
+* Adjusted pacing in Barnaby's blowjob scenes (the bartender of the Maidens' Bane) by splitting the scene in multiple pages.
+
+* Major update to the structure of the code base (hence the update from 0.4 to 0.5).
+ - The entire code base has been converted to ES6 modules and TypeScript instead of JavaScript, making much of the code strictly type checked (finding/fixing a fair number of obscure bugs), and preventing pollution of the global namespace.
+ - The build system has been changed from gulp to webpack.
+ - Node.js is used to get the latest versions of all vendor packages.
+ - More than anything else, this gives me a more stable platform to add content to.
+* What does this update mean for you as a player? It shouldn't change anything, but due to the magnitude of the changes, it's possible that some errors have sneaked their way through. I'll be releasing a slightly bigger, non-uglified development version that contains some more backtrace information until things stabilize, please report any issues that show up.
+ - For those that used the player object in the console to cheat, this method is unfortunately not available anymore. If there's requests for that kind of thing, I might consider making the objects accessible in some way.
+ - The application has been tested on the latest versions of Chrome and Firefox and seem to work fine on them. If you run into any issues starting the game, please append what browser/version you are using.
+
+Version 0.4.24
+--------------
+* Fixed a bug that didn't correctly remove lactation when breasts are flat.
+* Changed Androgyn and Testos items so that they both reduce breast size to flat level.
+* Changed Estros item so that it will increase breast size (though not as much as Bovia).
+
+Version 0.4.23
+--------------
+* Fixed a bug that would occur on trying to question the lagomorphs after winning to them.
+
+Version 0.4.22
+--------------
+* Changed version numbering (v is the 22nd letter, so .22)
+* Added a polyfill that fixes an issue with alchemy on Internet Explorer
+* Setting the Pics: On/Off in the data menu now affects the combat portraits of party/enemies
+* More code cleanup and typo fixes, courtesy of CalmKhaos
+* CSS style cleanup, courtesy of hindmanj on github
+
+Version 0.4u
+------------
+* New scene: Terry fucks player vagina. Variations for horsecock. Written by LD and QB.
+
+* More typos fixed (Fera). Thanks CK!
+* Fixed a bug in the pregnancy code, making pregnancies not be correctly detected
+* A real clever piece of code added by ElAcechador on Github, that allows you to see what alchemical recipes you can learn when talking to an alchemy NPC like Rosalin. Unknown recipes will be lined out in green, known recipes will be in blue
+* Also by ElAcechador: You can now batch brew alchemy items. You can only do so once you've learned them (NPCs such as Rosalin and Jeanne will still brew single potions)
+* Also by ElAcechador: You can now brew alchemy items that requires several steps in one single click. Example: Testos. This item requires several other brewable items (Equinium, Homos, Canis). You can now brew the item provided you have the base ingredients to brew the components, even if you don't have the components themselves.
+* Fixed a bug in anal toy masturbation
+* Updated the scorpion girls picture to a newly drawn one
+* Fixed an issue that would prevent saving in a certain circumstance (knot value set incorrectly)
+* Added a method to pack (.zip/.tar.gz) using gulp. Thanks to Miniwa on Github!
+
+Version 0.4t
+------------
+* Another fuckton of typos and tweaks in old content
+* Fixed parser error in Lizard tail fuck scene
+* The status effects system has gone over a bit of a revamp.
+ - Status effect spells such as Venom now work on a "wear-em-down" principle. Bosses will still be more resistant, but throwing the same spell a few times will consistently hit. Each time you miss, the enemy becomes more vulnerable to being hit with that status.
+ - Status effects have been split up into four different categories: physical (red outline), magical (blue outline), lust (pink outline) and other (green outline).
+ - Items can now provide status effect resistance. Green scented candle gives you poison resistance.
+ - There are now a total of three status healing spells, all learned from level 2 magic jobs (Healer, Mystic, Mage).
+ - Some status effects are going to be a bit overpowered for a while, until a more complete combat revamp can be enacted.
+* Warlock job added. Learn from Jeanne.
+* Swift should no longer be listed twice in the list of abilities if you have mastered it from both Rogue and Ranger.
+* Barnaby the bartender added to Maidens' Bane. Written by LD and QB and sponsored by Patreon, about 10k words total.
+
+Version 0.4s
+------------
+* Added a missing Terry-mpreg-pc trigger for his Worship -> Anal catch scene
+* Made an adjustment to the run formula, which should work as intended now
+* Meditation scenes added for the player, allowing you to drain lust
+* Added the elementalist job (learned from Jeanne)
+* A bunch of web-programming issues were looked at by someone with far more experience than me. Thanks VioletVolatile!
+ - Some GUI issues were adressed
+ - There's a new build system, based on Node.js and Gulp. This won't affect 99% of players
+ - Save compression is now used for the "online" saves (localStorage), significantly reducing the size of saves. This will not affect save editing, since the SaveToFile and SaveToText functionality are unchanged
+* Fuckton of typos fixed
+* Maria got some new talk topics, and ranger training. Written by The Observer
+* A new combat encounter added to the Highlands. Written by The Observer
+* A group combat encounter added to the Highlands, with all the new "scouts" enemies. Written by The Observer. Only has loss scenes written for the moment, no win scenes. One of the loss scenes requires you to be a female/herm cat
+* Fixed a pregnancy bug that'd make butt-pregs behave really weird. Pregnancy stage messages should work as intended now
+
+Version 0.4r
+------------
+* Yet more typos
+* Fixed so that the new cats scene [Present] option properly activates mpreg for those that have the perk
+* Felines now tend to come in bigger groups than before
+* Miranda has had a bit of a revamp of her talk menu, plus a bunch of typos fixed. Some new topics
+* Catboy and Centauress should give significantly higher xp rewards now
+* Clarified a section of the Search for the Scepter quest log, pointing you to where to go
+* Defeated Lagon has been revamped and replaced with new content. Written by LD and QB, and sponsored by Patreon
+* Added gulp as alternate build system (thanks ElAcechador on github). This changed the effective file to run if you are playing from git - run foe_debug.html instead of foe.html. If you are running online or using the downloaded zip, ignore this and play as usual
+
+Version 0.4q
+------------
+* CK took care of a whole bunch of typos
+* Added a warning message to the save screen
+* Fixed the requirement for Gwendy's Double Dildo scene. You need a cap of 8 instead of 30, so you might need to work your way up a bit first
+* New mob added to the Highlands: the catboy mage, written by The Observer. Packs a magical punch
+* New mob added to the Highlands: the centauress, written by The Observer. Packs a physical punch
+* The regular felines have a new loss scene if you happen across two of them with cocks. Patreon sponsored and written by a new writer, Tala
+* The cats have had their capacities slightly expanded, should make those with bigger cocks have an easier time to get it on with them
+* I relented and made robes into top-armor slot, so you can now wear pants under your robes
+
+Version 0.4p
+------------
+* Cassidy indoor sex scenes added. Must be unlocked
+* Cassidy sparring sex scenes (win/loss) added. Must be unlocked by first having regular sex
+* After your spar, Cass can ask you to model. One off scene
+* Cassidy now has a followup to the talk about looks. This will change some scenes slightly. Needs rel > 50 to trigger
+* Fixed an error in Cavalcade score evaluation
+* Slightly boosted the default girth cap for penetration, which will hopefully fix some stringent NPCs refusing penetration
+* Vaughn task 3: you can now trigger the scene by waiting in the inn too
+* Fixed a variety of typos etc.
+
+Version 0.4o2
+-------------
+* Fixed a bug related to Zebras (specifically when viewing their offspring in the nursery, but likely to have other effects too)
+* The usual bugs and typos
+* Fixed some weirdness in Cale's Rogue training fuck, [Take it] branch
+* Fixed a bug that would crash the game if a very specific set of actions were taken during the intro
+* The old Fertilium potion was renamed to Gestarium+. Its potence has increased slightly
+* Added a new Fertilium and Fertilium+ potions, which work as a potency enhancers. Adds a buff for 1 day or 5 days that greatly increases chances of impregnating and getting pregnant. Buy them from Patchwork for the moment
+* Added the Infertilium and Infertilium+ potions, which work as contraceptives. Adds a debuff for 1 or 5 days that almost certainly prevents pregnancy. Buy them from Patchwork for the moment
+
+Version 0.4o
+------------
+* Typos and bugfixes galore
+* Persistent status effects have been coded
+ - For now, you can get some stat boosts from Cveta's performances
+ - You can also get an experience boost from the food in the LB inn
+ - The same experience boost is added at the end of the Halloween event (bit late for it, but oh well)
+ - Getting food from Momo also gives the exp buff
+* Added a lot of pregnancy triggers (including stuff for mpreg). Holler if you find a scene which you feel should trigger an impregnation but doesn't, report it
+* Restricted the effects of Testos. If you are pregnant, that womb cannot be removed by the TF
+* Added Cassidy the weapon shop owner to Rigard, written by The Observer.
+* Added initial talks + talk menu to Orchid. A work in progress. Written by LukaDoc and sponsored by Patreon
+
+Version 0.4n2
+-------------
+* Fixed a bug with Anusol-crafting
+* Fixed a bug that would lock you in the toy masturbation menu. Menu is now unavailable if no valid toy is present
+* Fixed a bunch of typos
+* Masturbating with toys now increases your stretch the same way that being fucked would. This means you can gradually build up to taking larger insertions
+
+Version 0.4n
+------------
+* Bugfixing
+* Added masturbation options for the PC
+ - Cock. Written by LukaDoc. Patreon-sponsored
+ - Breasts. Written by The Observer
+ - Pussy. Written by The Observer
+ - Ass. Written by The Observer
+* Some more scenes for cats
+ - Win, get serviced. Requires cock. Written by LukaDoc. Patreon-sponsored
+ - Win, get vaginally fucked. Written by LukaDoc. Patreon-sponsored
+ - Loss, PC blows cocked cat. Written by LukaDoc. Patreon-sponsored
+* Fixed a bug with the Green Scented Candle. It actually does something now
+* Added a new Halloween scene, written by QB and LD, featuring a certain doberherm. Find it in the new room in the Mausoleum
+* The scenes to acquire Anusol can now be accessed. Talk to Rosalin once you've convinced the game that you really like anal
+* The scene to acquire Anusol+ can now be accessed. Bring a vial of Anusol to Jeanne
+* Pregnancies now take much longer time than earlier to come to term. ~20-30 days is "normal"
+
+Version 0.4m2
+-------------
+* Fixed a parser bug in spring description
+* Fixed a bug in the new Lei scene where the PC would duplicate
+* Fixed a bunch of bugs reported on the forums
+* Added Lord Harthon to the Halloween event. Written by LD and QB. Find him in the Mausoleum (and later on the Path)
+* You can no longer equip bottom armors after you've equipped a full armor (remove it first)
+
+Version 0.4m
+------------
+* Fixed a bug in Halloween which would cause your party to duplicate
+* Fixed a whole lot of bugged italics in Krawitz Q
+* Fixed a bug where Terry would be named Thief [1] upon recruiting
+* Belly size description, according to pregnancy
+* Added proper pregnancies (sorta). There's a birth scene, written by The Observer, and a nursery in the camp you can visit (though there's not much to do there)
+* Added a pregnancy potion (Gestarium)
+ - Available through the usual item debug for now, plus some drop tables
+ - It can also be bought from Asche
+ - To be specific, what this does is push an already started pregnancy. It won't make you pregnant
+* Added the items Anusol and Anusol+
+ - Can currently be gotten through debug
+* Adjusted the zebra shaman's drop table. Mistakenly put all the alchemy drops on the brave's drop table
+* New patreon sponsored scene by Del. It's a one-off encounter with Lei
+ - You need to know his name
+ - Go to the slums/residential area and search between 22-5 at night
+* Added a new loss scene for cats, written by The Observer
+ - You need to be lactating (a few Bovia or Gestarium potions should do it)
+* Removed Kyna from the game (no longer available even in debug)
+* Added Isla the sable morph. Find her at the highland spring (yes, you need to do Asche's third quest first)
+ - The spring itself has transformative effects, turning you toward a ferret morph
+
+Version 0.4l
+------------
+* Added Halloween content. You can access it either by playing during the time period 14 oct-14 nov, or by enabling debug
+ - Go to the Nomad camp between 8-22 and you should get a one-time scene to start things off
+ - After the one-time, the option "Pumpkin Pie" should be available to you between 17-22. The option is only available during the season or in debug
+ - Each "playthrough" resets the event state, so you can test out multiple paths
+* Fixed a bug regarding companions in Lei's task
+* Layla has a new sex scene written by QB/LD. You need a cock/toy to trigger it
+* Restructured the "Entity" class and split it up into multiple files. This shouldn't cause wierdness, but report if it does
+
+Version 0.4k
+------------
+* Asche's magic box now counts toward purchases for tasks
+* Added quest log entries for Vaughn's second and third task
+* Added Lei's first task + reward (you need to have talked to him about bodyguarding and offered first to get the sexy reward)
+* Added a sparring option to Lei. He's quite tough
+* Did some body format restructuring, making the code more structured
+* Fixed a bug which would remove your naga body on loading a save
+* Sparring against Miranda actually gives you a slight xp boost now
 
 Version 0.4j
 ------------
@@ -1023,7 +1301,7 @@ Version 0.2h
 
   parseOptions = {HeShe: kiakai.HeShe(), name: kiakai.name};
   Text.AddOutput("[name] is an elf. [HeShe] is pious.", parseOptions);
-  
+
 * Fixed some issues that would cause 2nd playthrough players to get multiple genetalia
 * Code conforms with closure compiler
 * Fixed a bunch of typos
@@ -1044,14 +1322,14 @@ Version 0.2f
 ------------
 * Write intro scenes
  - Light aspect (up until arriving on Eden)
- 
+
 * Locking off locations
  - Removed Ranch
  - Locked off Nomad camp temporarily (effectively sealing off the explorable world)
 
 * Improve way that clitCocks are handled (too much hassle as it is)
  - Find a way to add clitCock to cock array and treat as ordinary cock
- 
+
 * Improved appearance screen slightly
 * Fixed setting eye, skin and hair color
 * Fixed adding/removing appendages (tail, horns)
@@ -1093,7 +1371,7 @@ Version 0.2d
 ------------
 * Added initial part of "Hey there" encounter for Miranda in the bar
  - fixed bugs
- 
+
 * Button graphics
 * Explore and People tabs are sorted lexically
 * Design HP/MP bars for squadbased combat
